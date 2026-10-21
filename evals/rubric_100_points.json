@@ -1,9 +1,8 @@
 {
-  "name": "PDP_Rubric_100",
-  "version": "500.0.0",
+  "name": "PDP_Conversion_Rubric",
+  "version": "2.0.0",
   "total_score": 100,
   "passing_threshold": 85,
-  "gen_500_score": 99.8,
   "dimensions": [
     {
       "id": "hook_power",
