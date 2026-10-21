@@ -1,19 +1,23 @@
 <p align="center">
-  <img src="assets/hero_banner.jpg" alt="PDP Engine Banner" width="100%" style="border-radius: 12px;" />
+  <img src="assets/banner.svg" alt="PDP Studio Banner" width="100%" style="border-radius: 12px;" />
 </p>
 
 <div align="center">
 
+**English** • [简体中文](README_zh.md)
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
-[![Skill: Antigravity](https://img.shields.io/badge/Agent_Skill-Antigravity-6366f1.svg?style=flat-square)](SKILL.md)
+[![Skill: Antigravity](https://img.shields.io/badge/Skill-Antigravity-6366f1.svg?style=flat-square)](SKILL.md)
 [![Platform Matrix](https://img.shields.io/badge/Platforms-Shopify%20%7C%20Amazon%20A9%20%7C%20TikTok-10b981.svg?style=flat-square)](#-platform-compliance-matrix)
 [![Evaluation Rubric](https://img.shields.io/badge/Rubric--100-Audit_Passed-06b6d4.svg?style=flat-square)](evals/rubric_100_points.json)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-violet.svg?style=flat-square)](CONTRIBUTING.md)
 
-### The Autonomous E-Commerce Conversion Architecture
-**Transform Raw Specs & Customer Reviews into High-Converting, Algorithm-Compliant Listings**
+<p align="center">
+  <b>The Autonomous E-Commerce Copywriting &amp; Conversion Engine</b><br>
+  Transform raw technical specifications and customer reviews into high-converting, platform-compliant listings.
+</p>
 
-[Architecture](#-conversion-architecture) • [Live Comparison](#-real-world-comparison-generic-ai-vs-pdp-engine) • [Core Pillars](#-core-conversion-pillars) • [Quickstart](#-quickstart) • [Case Study](examples/demo_portable_espresso_machine.md)
+[Architecture](#-conversion-architecture) • [Live Comparison](#-real-world-comparison-generic-ai-vs-pdp-studio) • [Core Pillars](#-core-conversion-pillars) • [Quickstart](#-quickstart) • [Case Study](examples/demo_portable_espresso_machine.md)
 
 ---
 
@@ -21,38 +25,38 @@
 
 ## 💡 The Problem & The Solution
 
-90% of e-commerce listings written with generic AI prompts suffer from three critical flaws that destroy conversion:
+Most e-commerce listings generated with unconstrained AI prompts suffer from three critical flaws that kill conversion:
 
 1. **Bare Technical Specs**: Dumping raw numbers like `20Bar` or `7500mAh` that shoppers cannot contextualize.
-2. **Unsubstantiated Fluff**: Relying on words like *"revolutionary"*, *"best quality"*, or *"100% guarantee"* that trigger consumer distrust and Amazon TOS violations.
-3. **Ignored Customer Objections**: Failing to preempt the #1 reasons customers hesitate or return products (*"Is it hard to clean? Does the battery fail in the cold?"*).
+2. **Unsubstantiated Fluff**: Relying on clichés like *"revolutionary"*, *"best quality"*, or *"100% guarantee"* that erode consumer trust and trigger marketplace policy violations.
+3. **Ignored Customer Objections**: Failing to preempt the top reasons customers hesitate or return products (*"Is it hard to clean? Does the battery fail in freezing temperatures?"*).
 
-**`PDP Engine`** replaces unconstrained AI writing with a rigorous, four-stage conversion architecture:
+**`PDP Studio`** replaces unconstrained AI writing with a structured, four-stage conversion architecture:
 
 ---
 
 ## 🏛️ Conversion Architecture
 
 <p align="center">
-  <img src="assets/architecture_diagram.jpg" alt="Conversion Architecture Workflow" width="100%" style="border-radius: 12px;" />
+  <img src="assets/architecture.svg" alt="Four-Stage Conversion Architecture" width="100%" style="border-radius: 12px;" />
 </p>
 
 The engine executes four linear stages backed by continuous adversarial verification:
 1. **VoC & Review Mining**: Extracts customer frustration facets and Jobs-to-be-Done (JTBD) motives from 1-star to 5-star competitor reviews.
-2. **Value Hierarchy & Benefit Engine**: Translates physical metrics into quantified daily benefits via the P2B formula and Golden Ranking principle.
+2. **Value Hierarchy & P2B Engine**: Translates physical metrics into quantified daily benefits via the Parameter-to-Benefit (P2B) formula and Golden Ranking principle.
 3. **Multi-Platform Copy Factory**: Formats copy to strict algorithm constraints for Amazon A9/COSMO, Shopify DTC, and TikTok Shop.
 4. **Adversarial Red-Team Audit**: Deploys a Skeptical Buyer Persona and Compliance Guard to stress-test claims before final delivery.
 
 ---
 
-## 🥊 Real-World Comparison: Generic AI vs. PDP Engine
+## 🥊 Real-World Comparison: Generic AI vs. PDP Studio
 
 Here is a side-by-side comparison for a **Cordless Self-Heating Espresso Maker**:
 
-| Dimension | ❌ Generic ChatGPT-4o Output | 💎 PDP Engine Output |
+| Dimension | ❌ Generic ChatGPT-4o Output | 💎 PDP Studio Output |
 | :--- | :--- | :--- |
 | **Hero Feature Hook** | *"Features a powerful 20Bar pressure pump for great coffee extraction. Durable and high quality."*<br>*(Empty claims, bare numbers, zero sensory resonance)* | **"☕ 【RICH, VELVETY CREMA EVERYWHERE】"**<br>Italian 20-Bar commercial extraction compresses a $2,000 café workshop into your travel cup. Say goodbye to the watery, sour black coffee of standard travel makers. |
-| **Objection Preemption (Cleaning Friction)** | *"Waterproof and easy to clean with water."*<br>*(Vague, does not address the #1 return reason: moldy crevices)* | **"🧼 【10-SECOND RINSE & ZERO-MOLD DESIGN】"**<br>Magnetic quick-release chamber with IPX6 waterproofing. Zero hard-to-reach crevices means no stale coffee sludge, zero mold, and leak-free travel bag storage. |
+| **Objection Preemption (Cleaning Friction)** | *"Waterproof and easy to clean with water."*<br>*(Vague, ignores the #1 return reason: moldy crevices)* | **"🧼 【10-SECOND RINSE & ZERO-MOLD DESIGN】"**<br>Magnetic quick-release chamber with IPX6 waterproofing. Zero hard-to-reach crevices means no stale coffee sludge, zero mold, and leak-free travel bag storage. |
 | **Marketplace Compliance** | *"The best espresso maker on the market. 100% satisfaction guaranteed."*<br>*(Violates Amazon Listing TOS: 'best', 'guaranteed')* | **Compliant title & five points**: 193-character title with front-loaded search terms, zero banned superlatives, and 198-byte comma-free backend keywords. |
 | **Adversarial Defense** | Crumbles under skeptical review. Leaves buyers unsure if heating works in freezing winter temperatures. | **Preemptive cold-weather proof**: Automatically integrates lab-tested winter tolerance notes (*"Operates flawlessly in sub-zero -5°C snow camping"*). |
 
@@ -89,12 +93,13 @@ Every generated listing undergoes rigorous stress-testing:
 ```text
 ecommerce-pdp-generator/
 ├── SKILL.md                          # Antigravity Agent Skill Specification
-├── README.md                         # Project Presentation & Documentation
+├── README.md                         # Project Presentation (English)
+├── README_zh.md                      # Project Presentation (简体中文)
 ├── LICENSE                           # MIT Open-Source License
 ├── CONTRIBUTING.md                   # Contribution Guidelines
-├── assets/                           # High-Resolution Architectural Visuals
-│   ├── hero_banner.jpg               # Hero Banner Graphic
-│   └── architecture_diagram.jpg      # 4-Stage Conversion Architecture Diagram
+├── assets/                           # High-Resolution Vector Architectural Visuals
+│   ├── banner.svg                    # Vector Hero Banner
+│   └── architecture.svg              # 4-Stage Conversion Architecture Diagram
 ├── prompts/                          # Modular Prompt Engineering Assets
 │   ├── 01_voc_jtbd_mining.md         # Voice of Customer & JTBD Analysis
 │   ├── 02_p2b_benefit_engine.md      # Parameter-to-Benefit Translation Matrix
@@ -113,7 +118,7 @@ ecommerce-pdp-generator/
 ├── docs/                             # Deep Technical Specifications
 │   └── ARCHITECTURE.md               # Pipeline & NLP Mechanics
 └── examples/                         # Production Examples
-    ├── SHOWCASE_COMPARISON.md        # Generic AI vs. PDP Engine Head-to-Head
+    ├── SHOWCASE_COMPARISON.md        # Generic AI vs. PDP Studio Head-to-Head
     └── demo_portable_espresso_machine.md # Full-Lifecycle Case Study
 ```
 

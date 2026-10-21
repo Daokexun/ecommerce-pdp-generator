@@ -1,0 +1,215 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" width="100%" height="100%" style="background:#090d16; border-radius:12px; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="50%" stop-color="#070a12"/>
+      <stop offset="100%" stop-color="#04060a"/>
+    </linearGradient>
+    
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#141c2e" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0c1220" stop-opacity="0.9"/>
+    </linearGradient>
+
+    <linearGradient id="cyanLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+
+    <linearGradient id="emeraldLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+
+    <linearGradient id="indigoLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#f43f5e"/>
+    </linearGradient>
+
+    <!-- Filters for subtle elevation -->
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+
+    <!-- Markers -->
+    <marker id="arrowCyan" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M1,1 L7,4 L1,7 Z" fill="#06b6d4" />
+    </marker>
+    <marker id="arrowEmerald" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M1,1 L7,4 L1,7 Z" fill="#10b981" />
+    </marker>
+    <marker id="arrowIndigo" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M1,1 L7,4 L1,7 Z" fill="#6366f1" />
+    </marker>
+    <marker id="arrowRose" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M1,1 L7,4 L1,7 Z" fill="#f43f5e" />
+    </marker>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1200" height="480" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle Grid Pattern -->
+  <g opacity="0.07">
+    <path d="M0,60 H1200 M0,120 H1200 M0,180 H1200 M0,240 H1200 M0,300 H1200 M0,360 H1200 M0,420 H1200" stroke="#94a3b8" stroke-width="1"/>
+    <path d="M100,0 V480 M200,0 V480 M300,0 V480 M400,0 V480 M500,0 V480 M600,0 V480 M700,0 V480 M800,0 V480 M900,0 V480 M1000,0 V480 M1100,0 V480" stroke="#94a3b8" stroke-width="1"/>
+  </g>
+
+  <!-- Title Header -->
+  <g transform="translate(60, 48)">
+    <circle cx="6" cy="6" r="4" fill="#10b981"/>
+    <text x="20" y="10" fill="#94a3b8" font-size="11" font-weight="700" letter-spacing="1.5">PIPELINE SPECIFICATION</text>
+    <text x="0" y="32" fill="#ffffff" font-size="20" font-weight="700" letter-spacing="-0.5">Four-Stage Conversion Architecture</text>
+  </g>
+
+  <!-- Connecting Lines -->
+  <!-- Card 1 to Card 2 -->
+  <path d="M 310 240 L 340 240" fill="none" stroke="url(#cyanLine)" stroke-width="2" marker-end="url(#arrowCyan)"/>
+  
+  <!-- Card 2 to Card 3 -->
+  <path d="M 590 240 L 620 240" fill="none" stroke="url(#emeraldLine)" stroke-width="2" marker-end="url(#arrowEmerald)"/>
+  
+  <!-- Card 3 to Card 4 -->
+  <path d="M 870 240 L 900 240" fill="none" stroke="url(#indigoLine)" stroke-width="2" marker-end="url(#arrowIndigo)"/>
+
+  <!-- Feedback Loop: Card 4 back to Card 3 -->
+  <path d="M 1030 380 L 1030 420 L 750 420 L 750 380" fill="none" stroke="#f43f5e" stroke-width="1.5" stroke-dasharray="4,4" marker-end="url(#arrowRose)"/>
+  <rect x="830" y="410" width="130" height="20" rx="4" fill="#181324" stroke="#f43f5e" stroke-width="1"/>
+  <text x="895" y="424" fill="#fda4af" font-size="10" font-weight="600" text-anchor="middle">Score &lt; 85: Auto-Refine</text>
+
+  <!-- ==================== CARD 1 ==================== -->
+  <g transform="translate(60, 110)">
+    <rect width="250" height="270" rx="12" fill="url(#cardGrad)" stroke="#1e293b" stroke-width="1.5" filter="url(#cardShadow)"/>
+    <rect x="0" y="0" width="250" height="4" rx="2" fill="#06b6d4"/>
+    
+    <!-- Header -->
+    <rect x="18" y="20" width="28" height="28" rx="6" fill="#083344" stroke="#06b6d4" stroke-width="1"/>
+    <text x="32" y="38" fill="#38bdf8" font-size="13" font-weight="700" text-anchor="middle">01</text>
+    <text x="56" y="32" fill="#f8fafc" font-size="14" font-weight="700">VoC &amp; Review Mining</text>
+    <text x="56" y="46" fill="#64748b" font-size="11">Data-driven insight extraction</text>
+
+    <!-- Divider -->
+    <line x1="18" y1="62" x2="232" y2="62" stroke="#1e293b" stroke-width="1"/>
+
+    <!-- Bullets -->
+    <g transform="translate(18, 82)">
+      <circle cx="4" cy="4" r="2.5" fill="#06b6d4"/>
+      <text x="14" y="8" fill="#e2e8f0" font-size="12" font-weight="600">Aspect-Based Sentiment</text>
+      <text x="14" y="22" fill="#94a3b8" font-size="11">Clusters 1-star &amp; 5-star reviews</text>
+
+      <circle cx="4" cy="46" r="2.5" fill="#06b6d4"/>
+      <text x="14" y="50" fill="#e2e8f0" font-size="12" font-weight="600">JTBD Framework</text>
+      <text x="14" y="64" fill="#94a3b8" font-size="11">Functional, emotional, social jobs</text>
+
+      <circle cx="4" cy="88" r="2.5" fill="#06b6d4"/>
+      <text x="14" y="92" fill="#e2e8f0" font-size="12" font-weight="600">Pre-Purchase QA Scan</text>
+      <text x="14" y="106" fill="#94a3b8" font-size="11">Uncovers top checkout hesitations</text>
+
+      <circle cx="4" cy="130" r="2.5" fill="#06b6d4"/>
+      <text x="14" y="134" fill="#e2e8f0" font-size="12" font-weight="600">Severity Scoring (1-5)</text>
+      <text x="14" y="148" fill="#94a3b8" font-size="11">Separates dealbreakers from noise</text>
+    </g>
+  </g>
+
+  <!-- ==================== CARD 2 ==================== -->
+  <g transform="translate(340, 110)">
+    <rect width="250" height="270" rx="12" fill="url(#cardGrad)" stroke="#1e293b" stroke-width="1.5" filter="url(#cardShadow)"/>
+    <rect x="0" y="0" width="250" height="4" rx="2" fill="#10b981"/>
+
+    <!-- Header -->
+    <rect x="18" y="20" width="28" height="28" rx="6" fill="#064e3b" stroke="#10b981" stroke-width="1"/>
+    <text x="32" y="38" fill="#34d399" font-size="13" font-weight="700" text-anchor="middle">02</text>
+    <text x="56" y="32" fill="#f8fafc" font-size="14" font-weight="700">Value Hierarchy &amp; P2B</text>
+    <text x="56" y="46" fill="#64748b" font-size="11">Zero bare technical specs</text>
+
+    <!-- Divider -->
+    <line x1="18" y1="62" x2="232" y2="62" stroke="#1e293b" stroke-width="1"/>
+
+    <!-- Bullets -->
+    <g transform="translate(18, 82)">
+      <circle cx="4" cy="4" r="2.5" fill="#10b981"/>
+      <text x="14" y="8" fill="#e2e8f0" font-size="12" font-weight="600">Parameter-to-Benefit (P2B)</text>
+      <text x="14" y="22" fill="#94a3b8" font-size="11">Spec ➔ Mechanism ➔ Payoff</text>
+
+      <circle cx="4" cy="46" r="2.5" fill="#10b981"/>
+      <text x="14" y="50" fill="#e2e8f0" font-size="12" font-weight="600">Golden Ranking Hierarchy</text>
+      <text x="14" y="64" fill="#94a3b8" font-size="11">Unique &gt; Superior &gt; Distinct</text>
+
+      <circle cx="4" cy="88" r="2.5" fill="#10b981"/>
+      <text x="14" y="92" fill="#e2e8f0" font-size="12" font-weight="600">Hero Screen Moat</text>
+      <text x="14" y="106" fill="#94a3b8" font-size="11">P0 unique advantages placed on top</text>
+
+      <circle cx="4" cy="130" r="2.5" fill="#10b981"/>
+      <text x="14" y="134" fill="#e2e8f0" font-size="12" font-weight="600">Loss Aversion Framing</text>
+      <text x="14" y="148" fill="#94a3b8" font-size="11">Highlights cost of status quo</text>
+    </g>
+  </g>
+
+  <!-- ==================== CARD 3 ==================== -->
+  <g transform="translate(620, 110)">
+    <rect width="250" height="270" rx="12" fill="url(#cardGrad)" stroke="#1e293b" stroke-width="1.5" filter="url(#cardShadow)"/>
+    <rect x="0" y="0" width="250" height="4" rx="2" fill="#6366f1"/>
+
+    <!-- Header -->
+    <rect x="18" y="20" width="28" height="28" rx="6" fill="#1e1b4b" stroke="#6366f1" stroke-width="1"/>
+    <text x="32" y="38" fill="#818cf8" font-size="13" font-weight="700" text-anchor="middle">03</text>
+    <text x="56" y="32" fill="#f8fafc" font-size="14" font-weight="700">Multi-Platform Factory</text>
+    <text x="56" y="46" fill="#64748b" font-size="11">Algorithm-native copy</text>
+
+    <!-- Divider -->
+    <line x1="18" y1="62" x2="232" y2="62" stroke="#1e293b" stroke-width="1"/>
+
+    <!-- Bullets -->
+    <g transform="translate(18, 82)">
+      <circle cx="4" cy="4" r="2.5" fill="#6366f1"/>
+      <text x="14" y="8" fill="#e2e8f0" font-size="12" font-weight="600">Amazon A9/COSMO</text>
+      <text x="14" y="22" fill="#94a3b8" font-size="11">&lt;200 char title, &lt;249B search terms</text>
+
+      <circle cx="4" cy="46" r="2.5" fill="#6366f1"/>
+      <text x="14" y="50" fill="#e2e8f0" font-size="12" font-weight="600">Shopify DTC Buy-Box</text>
+      <text x="14" y="64" fill="#94a3b8" font-size="11">AIDA scroll-telling &amp; JSON-LD</text>
+
+      <circle cx="4" cy="88" r="2.5" fill="#6366f1"/>
+      <text x="14" y="92" fill="#e2e8f0" font-size="12" font-weight="600">6 Modular Blocks</text>
+      <text x="14" y="106" fill="#94a3b8" font-size="11">Pain mirror, contrast, proof, CTA</text>
+
+      <circle cx="4" cy="130" r="2.5" fill="#6366f1"/>
+      <text x="14" y="134" fill="#e2e8f0" font-size="12" font-weight="600">Visual Copy Space</text>
+      <text x="14" y="148" fill="#94a3b8" font-size="11">Midjourney/Flux photo prompts</text>
+    </g>
+  </g>
+
+  <!-- ==================== CARD 4 ==================== -->
+  <g transform="translate(900, 110)">
+    <rect width="240" height="270" rx="12" fill="url(#cardGrad)" stroke="#1e293b" stroke-width="1.5" filter="url(#cardShadow)"/>
+    <rect x="0" y="0" width="240" height="4" rx="2" fill="#f43f5e"/>
+
+    <!-- Header -->
+    <rect x="18" y="20" width="28" height="28" rx="6" fill="#4c0519" stroke="#f43f5e" stroke-width="1"/>
+    <text x="32" y="38" fill="#fb7185" font-size="13" font-weight="700" text-anchor="middle">04</text>
+    <text x="56" y="32" fill="#f8fafc" font-size="14" font-weight="700">Adversarial Red-Team</text>
+    <text x="56" y="46" fill="#64748b" font-size="11">Stress-test &amp; compliance</text>
+
+    <!-- Divider -->
+    <line x1="18" y1="62" x2="222" y2="62" stroke="#1e293b" stroke-width="1"/>
+
+    <!-- Bullets -->
+    <g transform="translate(18, 82)">
+      <circle cx="4" cy="4" r="2.5" fill="#f43f5e"/>
+      <text x="14" y="8" fill="#e2e8f0" font-size="12" font-weight="600">Skeptical Buyer Persona</text>
+      <text x="14" y="22" fill="#94a3b8" font-size="11">Attacks unsubstantiated claims</text>
+
+      <circle cx="4" cy="46" r="2.5" fill="#f43f5e"/>
+      <text x="14" y="50" fill="#e2e8f0" font-size="12" font-weight="600">Regulatory Guard</text>
+      <text x="14" y="64" fill="#94a3b8" font-size="11">FTC &amp; Amazon policy verification</text>
+
+      <circle cx="4" cy="88" r="2.5" fill="#10b981"/>
+      <text x="14" y="92" fill="#e2e8f0" font-size="12" font-weight="600">100-Point Audit Engine</text>
+      <text x="14" y="106" fill="#94a3b8" font-size="11">Hook, P2B, Proof, Compliance</text>
+
+      <rect x="14" y="128" width="120" height="24" rx="4" fill="#064e3b" stroke="#10b981" stroke-width="1"/>
+      <text x="74" y="144" fill="#a7f3d0" font-size="11" font-weight="700" text-anchor="middle">Score &gt;= 85 ➔ PASS</text>
+    </g>
+  </g>
+</svg>
