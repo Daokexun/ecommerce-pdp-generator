@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner.svg" alt="PDP Studio Banner" width="100%" style="border-radius: 12px;" />
+  <img src="assets/banner_zh.svg" alt="电商高转化详情页生成器" width="100%" style="border-radius: 12px;" />
 </p>
 
 <div align="center">
@@ -7,140 +7,185 @@
 [English](README.md) • **简体中文**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
-[![Skill: Antigravity](https://img.shields.io/badge/Skill-Antigravity-6366f1.svg?style=flat-square)](SKILL.md)
-[![Platform Matrix](https://img.shields.io/badge/Platforms-Shopify%20%7C%20Amazon%20A9%20%7C%20TikTok-10b981.svg?style=flat-square)](#-多平台算法合规矩阵)
-[![Evaluation Rubric](https://img.shields.io/badge/Rubric--100-Audit_Passed-06b6d4.svg?style=flat-square)](evals/rubric_100_points.json)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-violet.svg?style=flat-square)](CONTRIBUTING.md)
+[![Skill: Antigravity](https://img.shields.io/badge/技能-Antigravity-6366f1.svg?style=flat-square)](SKILL.md)
+[![支持平台](https://img.shields.io/badge/适配平台-Shopify_独立站_%7C_亚马逊_A9_%7C_TikTok-10b981.svg?style=flat-square)](#-多平台算法适配)
+[![审核机制](https://img.shields.io/badge/红蓝质检-双Agent审查通过-06b6d4.svg?style=flat-square)](evals/rubric_100_points.json)
+[![PRs Welcome](https://img.shields.io/badge/PRs-欢迎共建-violet.svg?style=flat-square)](CONTRIBUTING.md)
 
 <p align="center">
-  <b>自主电商详情页转化架构引擎</b><br>
-  将冰冷的技术参数与海量用户真实反馈，转化为高转化率、算法合规的工业级电商资产。
+  <b>做独立站与跨境电商，产品详情页是决定转化率的关键。</b><br>
+  别再让密密麻麻的冰冷参数劝退客户。用真实用户心声与黄金卖点法则，把效率提升 10 倍。
 </p>
 
-[架构拓扑](#-转化架构与流程拓扑) • [实战对决](#-真实运行效果残酷对决-generic-ai-vs-pdp-studio) • [四大转化基石](#-四大转化核心基石) • [极速上手](#-极速上手-quickstart) • [实战案例](examples/demo_portable_espresso_machine.md)
+[核心工作流](#-核心工作流程) • [实战真实对比](#-真实对比自己写的自嗨文案-vs-本工具生成的精准种草文案) • [黄金排版三原则](#-高转化详情页的四大核心抓手) • [极速上手](#-30秒极速上手) • [完整实战案例](examples/demo_portable_espresso_machine.md)
 
 ---
 
 </div>
 
-## 💡 核心痛点与破局之道
+## 为什么你的产品详情页转化率上不去？
 
-90% 的卖家直接使用通用大模型编写产品详情页时，都会陷入严重损害转化的三大通病：
+很多卖家花大价钱做 3D 渲染、搞专业拍摄、砸广告引流，结果流量进来了，转化率还是惨不忍睹。
 
-1. **只有冰冷参数，没有感知价值**：机械罗列“20Bar”、“7500mAh”，消费者完全无法理解这与自己的生活有什么直接利益关联。
-2. **只有自嗨吹捧，没有信任证据**：充斥着“最高品质”、“革命性技术”、“100%保证”等空洞口号，不仅引发买家防御心理，更极易触发亚马逊封店下架风控。
-3. **只有千人一面，没有疑虑预击**：对买家最担心的“死角好不好洗、冬天电池会不会冻死、卡不卡胶囊”等前三大核心退货原因视而不见，导致进店跳出率居高不下。
+问题到底出在哪？
 
-**`PDP Studio`** 摒弃了传统的黑盒自由生成，以严苛的四阶工业化转化架构重构详情页生产流程：
+**因为你还在“自嗨”——你觉得很牛的卖点，客户根本不关心。**
+
+绝大多数卖家的详情页都有三个通病：
+
+1. **只有参数，没有卖点**：写得密密麻麻全是几千毫安、几核芯片、几级防水。客户根本看不懂这些冷冰冰的数字对他有什么好处，能帮他省多少时间或免去什么麻烦。
+2. **只有描述，没有场景**：只告诉客户“这是个什么东西”，从来没讲清楚“在什么具体生活场景下用”，产生不了“这说的就是我”的代入感。
+3. **只有自夸，没有信任**：满屏全是“我们质量最好”、“独家专利技术”，但没有任何能让客户信服的第三方证据、真实评价背书或者无忧兜底承诺，客户心里直打鼓。
+
+**高手怎么做？** 真正的高手从来不闭门造车，而是靠抓取竞品真实用户的差评、好评和 QA 问答，把卖点从自嗨变成精准种草。
+
+本工具就是把这套一线外贸操盘手的实战打法，封装成开箱即用的自动化 AI 技能。
 
 ---
 
-## 🏛️ 转化架构与流程拓扑
+## 🏛️ 核心工作流程
 
 <p align="center">
-  <img src="assets/architecture.svg" alt="四阶转化流程架构图" width="100%" style="border-radius: 12px;" />
+  <img src="assets/architecture_zh.svg" alt="电商高转化详情页四步法工作流" width="100%" style="border-radius: 12px;" />
 </p>
 
-系统通过严密的四大流水线环节，并依托持续的红蓝对抗完成闭环质检：
-1. **真实声音与痛点挖掘 (VoC Mining)**：从竞品 1-5 星真实评价与 QA 中，提取细粒度情感特征（ABSA）与待办任务（JTBD）。
-2. **价值层级与收益跃迁 (P2B Engine)**：通过 P2B 公式打破裸参数，严格执行“人无我有”黄金排序法则。
-3. **多平台合规文案工厂 (Copy Factory)**：针对 Amazon A9/COSMO、Shopify DTC 和 TikTok Shop 进行差异化算法合规排版。
-4. **对抗式红蓝演练质检 (Red-Team Audit)**：引入挑剔买家 Agent 与法务合规官进行极限施压，保障 100% 零违规与高转化。
+整套流程拆解为扎实的四个步骤，每一步都有严密的提示词和落地规则：
+
+1. **第一步：竞品调研与用户心声挖掘**：
+   - 看竞品 1-2 星差评：用户最不满意什么？这就是你可以放大并解决的差异化破局点。
+   - 看竞品 5 星好评：用户反复夸什么？这就是买家愿意掏真金白银的核心决策点。
+   - 看售前 QA 问答：用户下单前反复犹豫什么？提前把疑虑写进文案打消掉。
+2. **第二步：卖点提炼与参数转化 (P2B)**：
+   - 严禁出现孤立的裸参数！每个硬件参数都必须通过三层跳板翻译成生活收益（参数 $\rightarrow$ 原理 $\rightarrow$ 客户能看懂的好处 $\rightarrow$ 情绪终局）。
+   - 严格按照**“人无我有 ＞ 人有我优 ＞ 人优我异”**黄金排序，把最大护城河推到首屏。
+3. **第三步：平台文案模块化定制**：
+   - 亚马逊专线：前置高搜索量大词，严格控容 200 字符内，五点描述大写利益首词，零违规词。
+   - 独立站专线：打造首屏 2 句话极简 Buy-Box 钩子，AIDA 动线层层递进，移动端适配。
+   - 配套 Midjourney / Flux 电商摄影分镜提示词，明确要求画面预留排版留白（Copy Space）。
+4. **第四步：真实买家挑刺与合规审查**：
+   - 模拟一位毒舌、挑剔、对套路免疫的老买家对文案极限质问（“清洗真有这么简单？”、“冬天电池会不会冻坏？”）。
+   - 严格扫描排查绝对化违禁词与医疗宣称，保障店铺安全，低于 85 分自动重写。
 
 ---
 
-## 🥊 真实运行效果残酷对决: Generic AI vs. PDP Studio
+## 🥊 真实对比：自己写的自嗨文案 vs 本工具生成的精准种草文案
 
-以下为针对同一款【便携式无线自加热咖啡机】的真实产出对比：
+以一款【便携无线自加热胶囊咖啡机】为例，看看两者的差距有多悬殊：
 
-| 评估维度 | ❌ 普通通用大模型 (Generic ChatGPT-4o) | 💎 PDP Studio 工业级输出 |
+| 关键模块 | ❌ 传统自嗨型写法 (大部分人直接问 AI 的结果) | 💎 本工具生成的种草文案 (直击痛点与场景) |
 | :--- | :--- | :--- |
-| **首屏核心卖点** | “采用 20Bar 强大压力泵，萃取更充分；结实耐用，品质卓越。”<br>*(❌ 假大空口号，参数裸露，买家无感)* | **“☕ 【每一口都有泛着坚果香的金黄油脂】”**<br>意大利 20-Bar 商业级恒压穿透，相当于将万元级专业咖啡馆工坊装进随身水杯；彻底告别竞品寡淡酸涩的“黑水”，入口醇厚丝滑。 |
-| **打消疑虑<br/>(差评狙击)** | “机身防水，易于用水冲洗。”<br>*(❌ 轻描淡写，买家担心发霉不敢下单)* | **“🧼 【水龙头下一冲 10 秒即净，绝无发霉死角】”**<br>创新磁吸快拆结构与 IPX6 全机身防水；户外露营半瓶矿泉水即可冲洗干净，不留残渣、不卡胶囊、放包里不漏残液。 |
-| **平台合规安全** | “The best espresso maker on the market. 100% satisfaction guaranteed.”<br>*(⚠️ 包含 Best / Guaranteed 等词，直接触犯亚马逊红线)* | **合规标题与五点描述**：严格限制在 193 字符内，核心大词前置，零违规虚假宣传词，后台配齐 198 字节免逗号隐形词。 |
-| **红蓝对抗防御** | 经不起推敲。面对“冬天零下户外电池会不会冻死”的质疑，毫无应对方案。 | **前置植入耐寒实测证明**：自动在正文补充低温测试注释（“经 -5℃ 高原冰雪环境实测，智能温控自保温，严寒环境依然坚挺输出 92℃ 滚烫浓缩”）。 |
+| **首屏核心卖点** | “采用 20Bar 强大压力泵，萃取更充分；内置 7500mAh 电池，结实耐用，超长续航。”<br>*(❌ 全是孤立数字和自夸套话，买家看一眼就划走)* | **“☕ 【每一口都有泛着坚果香的金黄油脂】”**<br>意大利 20-Bar 商业级恒压穿透，相当于把万元级专业咖啡馆工坊装进随身水杯；彻底告别竞品水质寡淡、又酸又涩的“黑水”，入口醇厚丝滑。 |
+| **打消疑虑<br/>(差评狙击)** | “机身防水，易于用水冲洗。”<br>*(❌ 竞品差评里全在骂死角多容易发霉，你轻描淡写一句买家根本不敢买)* | **“🧼 【水龙头下一冲 10 秒即净，绝无发霉死角】”**<br>创新磁吸快拆结构与 IPX6 全机身防水；户外露营半瓶矿泉水冲洗即亮洁如新，不留残渣、不卡胶囊、放包里不漏残液。 |
+| **平台合规安全** | “The best espresso maker on the market. 100% satisfaction guaranteed.”<br>*(⚠️ 包含 Best / Guaranteed 绝对化词，直接触发亚马逊封店下架风控)* | **精准合规标题与五点**：193 字符精准控容，核心大词前置，零违规虚假宣传词，后台附带 198 字节免逗号纯净检索词。 |
+| **防御买家质疑** | 经不起推敲。面对“冬天零下户外电池会不会冻死”的致命质疑，完全没有防线。 | **前置植入耐寒实测证明**：正文自动注入测试注释（“经 -5℃ 高原冰雪环境实测，智能温控自保温，严寒环境依然坚挺输出 92℃ 滚烫浓缩”）。 |
 
-> 📖 查看完整跨平台标题、五点描述与红蓝对抗案例：[examples/SHOWCASE_COMPARISON.md](examples/SHOWCASE_COMPARISON.md)
-
----
-
-## 💎 四大转化核心基石
-
-### 1. 参数向生活收益跃迁引擎 (P2B Engine)
-严格执行**“裸参数清零铁律”**：文案中严禁出现孤立的技术参数，必须回答“这给消费者带来什么可衡量的生活、时间或情绪红利”：
-$$\text{物理工程参数} \xrightarrow{\text{底层运作机制}} \text{生活具象收益} \xrightarrow{\text{心理情绪终局}}$$
-
-### 2. 黄金排序法则 (Golden Ranking Hierarchy)
-根据竞争壁垒精准分配页面视觉落点：
-- 🥇 **人无我有 (Unique Advantage)**：独占专利与创新特性 $\rightarrow$ **首屏主标题与主视觉绝对置顶**。
-- 🥈 **人有我优 (Superior Performance)**：性能碾压行业平均线 $\rightarrow$ **第二屏对比矩阵与拆解**。
-- 🥉 **人优我异 (Distinct Positioning)**：审美极简、服务与生活方式差异化 $\rightarrow$ **第三屏场景与故事深挖**。
-
-### 3. 多平台算法合规矩阵
-- **Amazon 模式**：标题严格限制在 200 字符内且大词前置，五点描述采用大写利益首词，生成低于 249 字节的无逗号搜索词。
-- **Shopify / 独立站模式**：2 句话极简 Buy-Box 转化 Hook，AIDA 沉浸式滚屏叙事，集成 Google `JSON-LD` 结构化元数据。
-- **TikTok Shop 模式**：3 秒注意力反差切入，短平快痛点聚焦。
-
-### 4. 对抗式红蓝演练与量化打分
-文案定稿前必须经过双重严格质检：
-- **挑剔买家 Agent**：模拟精打细算、见多识广的消费者，对夸大承诺发起极限反问。
-- **法务合规官 Agent**：排查 FTC 虚假广告风险、医疗宣称及平台禁用违规词汇。
+> 📖 查看完整跨平台标题、五点描述与红蓝对抗实录：[examples/SHOWCASE_COMPARISON.md](examples/SHOWCASE_COMPARISON.md)
 
 ---
 
-## 📂 项目结构规范
+## 💎 高转化详情页的四大核心抓手
+
+### 1. 参数变好处法则 (Parameter-to-Benefit)
+**铁律：不要直接写参数，要把参数翻译成客户听得懂的好处。**
+- *错误示范*：“电池容量 165000mAh。”
+- *正确示范*：“充满一次电，自驾露营 4 天 3 晚手机和无人机无需到处找插座，彻底告别电量焦虑。”
+
+### 2. 黄金排序三原则
+卖点挖出来了，绝对不能抓阄乱排，必须按竞争壁垒定屏序：
+- 🥇 **人无我有**：竞品都没有的独家特性，这是你最大的杀手锏，**必须放在首屏主图和主标题**。
+- 🥈 **人有我优**：大家都有但你指标更好（更轻巧、更安静、加热更快），放在**第二屏做直观对比表**。
+- 🥉 **人优我异**：性能差不多时换角度讲差异（极简设计、专家背书、送礼仪式感），放在**第三屏讲生活方式**。
+
+### 3. 多平台算法适配
+- **亚马逊 A9 算法**：标题必须在 200 字符内，搜索大词往前放；五点描述必须以大写利益词开头；Backend 词控制在 249 字节内且不带逗号。
+- **Shopify / 独立站**：首屏价格下方放 2 句话极简钩子；按 AIDA 模型层层递进；移动端文字绝不超过 4 行，图文穿插。
+
+### 4. 挑剔买家审查与风控自愈
+文案写完不算完，必须让挑剔买家 Agent 找茬：
+- 专挑假大空的自夸废话并强制修改。
+- 自动排查 FTC 虚假宣传与平台违禁词，综合评分低于 85 分自动重新打磨。
+
+---
+
+## 🧠 用好这套技能的三个关键心法
+
+### 1. 把 AI 当副驾驶，不是自动驾驶
+AI 生成的内容需要你把关。它不知道你的工厂成本、不知道你当地竞品的最新打法，你的商业判断力永远不可替代。
+
+### 2. 用对话迭代，不是一次性输出
+一次成型的输出往往平庸。先给产品信息，再追问细化深挖（比如“针对超长续航，在什么具体场景下能帮客户省多少钱？”），2-3 轮对话后质量会发生质的飞跃。
+
+### 3. 注入你的真实行业知识
+AI 是引擎，你的产品细节、工厂工艺、客户真实反馈才是燃料。把这些料喂饱，AI 才能输出真正有杀伤力的高转化文案。
+
+---
+
+## 📂 项目结构
 
 ```text
 ecommerce-pdp-generator/
-├── SKILL.md                          # Antigravity Skill 主控编排协议规范
-├── README.md                         # 英文官方文档
-├── README_zh.md                      # 中文官方文档
+├── SKILL.md                          # Antigravity Agent 技能主控规范
+├── README.md                         # 英文官方文档 (English)
+├── README_zh.md                      # 中文官方文档 (简体中文)
 ├── LICENSE                           # MIT 开源协议
-├── CONTRIBUTING.md                   # 社区贡献指南
-├── assets/                           # 高清矢量架构视觉图
-│   ├── banner.svg                    # 矢量品牌横幅
-│   └── architecture.svg              # 4 阶转化流程矢量拓扑图
+├── CONTRIBUTING.md                   # 社区共建指南
+├── assets/                           # 纯矢量视觉图资产
+│   ├── banner.svg                    # 英文版矢量横幅
+│   ├── banner_zh.svg                 # 中文版矢量横幅
+│   ├── architecture.svg              # 英文版架构拓扑图
+│   └── architecture_zh.svg           # 中文版架构拓扑图
 ├── prompts/                          # 8 大模块化提示词资产工厂
-│   ├── 01_voc_jtbd_mining.md         # 细粒度 ABSA 挖掘与待办任务映射
-│   ├── 02_p2b_benefit_engine.md      # P2B 裸参数绝对清零与价值跃迁
-│   ├── 03_value_triad_ranking.md     # 黄金排序：人无我有 > 人有我优 > 人优我异
-│   ├── 04_platform_headline_matrix.md# 跨平台标题矩阵（Amazon/Shopify）
-│   ├── 05_aida_conversion_funnel.md  # AIDA 漏斗与 Fogg B=MAP 动线
+│   ├── 01_voc_jtbd_mining.md         # 竞品好差评挖掘与买家诉求分析
+│   ├── 02_p2b_benefit_engine.md      # 参数向生活收益转化 (P2B 法则)
+│   ├── 03_value_triad_ranking.md     # 黄金排序法则 (人无我有 > 人有我优)
+│   ├── 04_platform_headline_matrix.md# 亚马逊 A9 与独立站标题工厂
+│   ├── 05_aida_conversion_funnel.md  # AIDA 漏斗与心理动线规划
 │   ├── 06_modular_copy_factory.md    # 六大攻防文案工厂
-│   ├── 07_visual_prompt_storyboard.md# 商业分镜摄影 Prompt 与眼动留白
-│   └── 08_adversarial_red_team_audit.md # 挑剔买家 + 合规风控红蓝质检与自愈
-├── templates/                        # 平台落地模版与标准规范
+│   ├── 07_visual_prompt_storyboard.md# 电商摄影分镜与排版留白提示词
+│   └── 08_adversarial_red_team_audit.md # 挑剔买家 + 平台风控审查
+├── templates/                        # 平台标准模版
 │   ├── pdp_schemas.json              # 结构化输出 JSON Schema
-│   ├── pdp_shopify_template.md       # Shopify / 独立站 DTC 落地模版
-│   └── pdp_amazon_template.md        # Amazon A9/A10 标题与五点模版
-├── evals/                            # 量化评估套件
-│   └── rubric_100_points.json        # 100 分量化转化评估模型
-├── docs/                             # 技术白皮书与规范文档
-│   └── ARCHITECTURE.md               # 核心架构与 NLP 机制
+│   ├── pdp_shopify_template.md       # Shopify / 独立站落地模版
+│   └── pdp_amazon_template.md        # 亚马逊 A9 标题与五点模版
+├── evals/                            # 质量评估套件
+│   └── rubric_100_points.json        # 100 分转化量化评估模型
+├── docs/                             # 技术文档
+│   ├── ARCHITECTURE.md               # 核心架构与底层机制
+│   └── SERIES_METHODOLOGY.md         # 系列开源项目生产标准作业程序 (SOP)
 └── examples/                         # 真实实战对决案例文档
-    ├── SHOWCASE_COMPARISON.md        # 普通 AI vs PDP Studio 同台残酷对决
+    ├── SHOWCASE_COMPARISON.md        # 普通 AI vs 本工具同台残酷对决
     └── demo_portable_espresso_machine.md # 便携咖啡机工业级全套产出
 ```
 
 ---
 
-## 🚀 极速上手 (Quickstart)
+## 🚀 30秒极速上手
 
 ### 在 Google Antigravity / Claude Agent 中直接调用
-将本 Skill 存放于 `.agents/skills/ecommerce-pdp-generator`，在对话中直接唤醒：
+把本技能放入 `.agents/skills/ecommerce-pdp-generator`，在对话中直接唤醒：
 
 ```text
 /skill ecommerce-pdp-generator
-平台: Shopify DTC (或 Amazon A9/A10)
-产品: 便携式无线自加热咖啡机
-参数: 20Bar泵压, 7500mAh电池, 650g重量, IPX6全机水洗
-竞品差评: 很多竞品只能倒热水、萃取没有油脂像黑水、死角多容易发霉
-目标人群: 经常出差的商旅精英、自驾露营爱好者
+目标平台: Shopify 独立站 (或 亚马逊 A9)
+产品名称: 便携式无线自加热咖啡机
+基础参数: 20Bar泵压, 7500mAh电池, 650g重量, IPX6防水可冲洗
+竞品差评: 竞品大多只能倒热水、萃取没油脂像黑水、死角多容易发霉发臭
+目标人群: 出差商旅人群、自驾露营爱好者
 ```
 
 ---
 
-## 🤝 贡献与开源协议 (Contributing & License)
+## 写在最后
 
-欢迎提交 PR 与 Issue，共同扩充多平台模板与测评样本！
+**AI 不会取代你，但会用 AI 的卖家会取代不用 AI 的卖家。**
+
+这套工具的核心不是让你无脑复制 AI 的输出，而是帮你把精力从“绞尽脑汁怎么憋词”中解脱出来，转移到真正关键的“产品策略与用户洞察”上。
+
+把真实反馈理顺，配上这套工业级转化流程，你的产品详情页就能迎来真正的质变。
+
+---
+
+## 🤝 贡献与开源协议
+
+欢迎提交 PR 与 Issue，共同扩充多平台模板与实战测评！
 本项目基于 [MIT License](LICENSE) 开源发布。
